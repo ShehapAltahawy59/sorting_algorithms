@@ -18,11 +18,11 @@ void bubble_sort(int *array, size_t size)
     for (j =0; j < size-i-1; j++)
     {
         
-        if(array[i]>array[i+1])
+        if(array[j]>array[j+1])
         {
-            swap = array[i];
-            array[i]=array[i+1];
-            array[i+1]=swap;
+            swap = array[j];
+            array[j]=array[j+1];
+            array[j+1]=swap;
             print_array(array, size);
         }
         
